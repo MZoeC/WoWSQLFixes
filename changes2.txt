@@ -1,0 +1,30 @@
+SQL: 
+
+UPDATE `creature_proto` SET `respawntime` = 'Respawn time here' WHERE `entry` = entry id here LIMIT 1;
+
+Set respawn time to 10 minutes. 
+
+Entries: 
+
+4065
+436
+4064
+486
+4462
+4464
+334
+435
+
+Set Rare mobs to 1hr respawn. Not sure if you can change respawn based on mob rank, but I know rare rank is 4. Here are a few entries for rare mobs. 
+
+584 
+520
+573
+100
+
+Moved Old Serra'kis in Blackfathom Deeps due to clipping into the wall. 
+
+.npc delete 27402 
+.npc add 4830  (Coordinates: -787.940735 -174.017853 -39.832016) [In Blackfathom Deeps] 
+
+.npc delete 18435  (1 more Blackrock Sentry than in Vanilla WoW. Needs to be deleted.) 

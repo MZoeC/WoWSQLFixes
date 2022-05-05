@@ -1,0 +1,78 @@
+  .gobject delete #guidnumber (Overlapped Mining Nodes in Deadmines [Silver, Tin, Copper]) >  Issue: Overlapped in same area > Solution: Delete extras and leave 1 node in each area
+
+78905
+78906
+78910
+78912
+78914
+78915
+78917
+78918
+78920
+78921
+78932
+78933
+78940
+78942
+78943
+78945
+78953
+78954
+78956
+78957
+78958
+78960
+78998
+78999
+79037
+79038
+79124
+79125
+79165
+79167
+79175
+79176
+79187
+79188
+79214
+79215
+79309
+79311
+79342
+79344
+79372
+79374
+105205
+105207
+
+  .npc delete #guidnumber (Defias Thug [Enemy NPCs])  > Issue: Too Numerous > Solution: Delete unnecessary NPCs and leave necessary
+
+80150
+80171
+80187
+80189
+80199
+80200
+80209
+80223
+80244
+80258
+80259
+
+  .gobject add 161557 (Milley's Harvest [Quest Item])   > Issue: Too Few > Solution: Add extra objects in appropriate locations  
+
+--Coordinates--
+
+9055.840820 -350.161163 73.452797 
+9069.029297 -340.000397 73.452797 
+9086.000977 -352.894165 73.452797 
+9063.222656 -292.664307 73.452797 
+9087.000977 -347.779144 73.452797 
+9063.184570 -368.830017 73.452797 
+
+  .gobject add 171699 (Dwarven Mailbox)  > Issue: Mailbox not Present in Kharanos > Solution: Place Mailbox in proper location in Kharanos
+
+--Coordinates--
+
+5596.737305 -506.451141 401.063782 
+

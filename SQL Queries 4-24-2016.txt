@@ -1,0 +1,60 @@
+--Added Iron Deposits and Lesser Bloodstone Deposits (quest object) to Arathi Highlands 
+
+INSERT INTO gameobject (id,position_x,position_y,position_z)
+VALUES (1735, 993.057, -3842.301, 148.740),
+(1735, 954.231, -3890.925, 153.958),
+(1735, 908.406, -3844.400, 142.853),
+(1735, -870.960, -4011.500, 146.433),
+(1735, 799.793, -3898.840, 144.969),
+(1735, -924.760, -3960.100, 150.306),
+(2653, -881.392, -3896.900, 135.703),
+(2653, -895.070, -3943.670, 135.355),
+(2653, -880.958, -3975.750, 138.617),
+(2653, -845.099, -3922.780, 147.474),
+(2653, -864.138, -3889.410, 141.384),
+(2653, -945.351, -3929.220, 145.900),
+(2040, -897.000, -3949.000, 138.035);
+
+--Properly set the respawn times for Mining Deposits
+
+UPDATE gameobject 
+SET spawntimesecs=300
+WHERE id IN (1735, 2040, 1731, 1732, 1733, 1734, 2047);
+
+--Properly set the respawn times for Lesser Bloodstone Ore
+
+UPDATE gameobject 
+SET spawntimesecs=120
+WHERE id IN (2653);
+
+--Properly set location of Lord Melenas (ID:2038)
+
+UPDATE creature
+SET position_x=10129.099,position_y=1148.930,position_z=1314.480
+WHERE id=2038;
+
+--Added Mithril to Arathi Highlands
+
+INSERT INTO gameobject (id, position_x, position_y, position_z)
+VALUES (2040, -1698.813, -2016.333, 54.561), 
+(2040, -1815.185, -2009.217, 63.337),
+(2040, -1806.501, -1946.836, 61.272),
+(2040, -1825.900, -1805.691, 57.988),
+(2040, -1854.020, -1766.301, 65.482),
+(2040, -1893.566, -1703.768, 66.010),
+(2040, -1827.403, -1690.515, 56.776),
+(2040, -1981.746, -1653.740, 44.645),
+(2040, -1620.327, -2244.473, 31.003),
+(2040, -1502.150, -2197.643, 16.635),
+(2040, -1422.937, -2048.128, 21.989);
+
+
+--Added adiitional quest object Milly's Harvest (Last attempt contained an extra comma, did not apply)
+
+INSERT INTO gameobject (id,position_x,position_y,position_z)
+VALUES (161557, 9055.840820, -350.161163, 73.452797),
+(161557, 9069.029297, -340.000397, 73.452797 ),
+(161557, 9086.000977, -352.894165, 73.452797 ),
+(161557, 9063.222656, -292.664307, 73.452797 ),
+(161557, 9087.000977, -347.779144, 73.452797 ),
+(161557, 9063.184570, -368.830017, 73.452797 );
